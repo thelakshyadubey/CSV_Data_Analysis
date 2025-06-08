@@ -3,7 +3,7 @@
 **An AI-powered Streamlit application for analyzing CSV data using LangChain agents and GROQ's LLaMA-3 model.**
 
 ---
-## Project Deployed on Render: [https://your-csv-analyzer-app.onrender.com](https://csv-data-analysis-il2k.onrender.com/) *(update with your actual URL)*
+## Project Deployed on Render: [https://your-csv-analyzer-app.onrender.com](https://csv-data-analysis-il2k.onrender.com/)
 
 ## Table of Contents
 
@@ -96,6 +96,7 @@ streamlit run app.py
 - View generated visualizations and responses
 
 ## Folder Structure
+```text
 csv-data-analyzer/
 ├── app.py                # Main application file
 ├── llm_utils.py          # LLM integration utilities
@@ -105,7 +106,7 @@ csv-data-analyzer/
 │   └── background.png    # Background image
 ├── requirements.txt      # Dependencies
 └── README.md             # Project documentation
-
+```
 ## How It Works
 **1. Data Upload:**
 - User uploads a CSV file
@@ -123,7 +124,7 @@ csv-data-analyzer/
 - Returns human-readable response
 
 ## Author
-[Lakshya Dubey]
+Lakshya Dubey
 
 ## Preview
 ![image](https://github.com/user-attachments/assets/fa90b7aa-0b45-4e0f-94ac-fd88b92dd97e)
