@@ -1,0 +1,237 @@
+/* ===== Main App Background ===== */
+.stApp {
+    background: 
+        linear-gradient(rgba(21, 23, 63, 0.85), rgba(9, 9, 9, 0.9)), /* Dark overlay */
+        url("data:image/png;base64,{{BACKGROUND_IMAGE}}") center/cover no-repeat fixed !important;
+    color: white;
+    min-height: 100vh;
+}
+
+/* ===== Header Styling ===== */
+header[data-testid="stHeader"] {
+    background: linear-gradient(90deg, #22267b 0%, #15173f 100%) !important;
+    border-bottom: none !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.3) !important;
+}
+
+/* ===== Text Readability ===== */
+h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+p, .stMarkdown, .stText, .stTextInput, .stTextArea {
+    color: #f0f0f0 !important;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ===== Container Styling ===== */
+.stContainer, .st-emotion-cache-1erivf3 {
+    background: rgba(34, 38, 123, 0.3) !important;
+    backdrop-filter: blur(5px);
+    border-radius: 10px !important;
+    border: 1px solid rgba(255,255,255,0.1) !important;
+    padding: 1.5rem !important;
+}
+
+/* ===== File Uploader Specific ===== */
+.st-emotion-cache-1erivf3 {
+    border: 2px dashed rgba(255,255,255,0.3) !important;
+    transition: all 0.3s ease !important;
+}
+
+.st-emotion-cache-1erivf3:hover {
+    background: rgba(34, 38, 123, 0.4) !important;
+    border-color: rgba(255,255,255,0.5) !important;
+}
+
+/* ===== Button Styling ===== */
+.stButton>button, .st-emotion-cache-ktz07o {
+    background: linear-gradient(90deg, #22267b 0%, #15173f 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+}
+
+.stButton>button:hover, .st-emotion-cache-ktz07o:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+
+/* ===== Data Preview Container ===== */
+.stExpander .stDataFrame {
+    backdrop-filter: none !important; /* Remove blur for data preview */
+    background: rgba(21, 23, 63, 0.9) !important; /* More opaque background */
+}
+
+/* ===== Expander Header ===== */
+.stExpander > .st-emotion-cache-1hynsf2 {
+    background: linear-gradient(90deg, #22267b 0%, #15173f 100%) !important;
+    color: white !important;
+    border-radius: 8px 8px 0 0 !important;
+    padding: 12px 16px !important;
+}
+
+/* ===== Expander Content ===== */
+.stExpander > .st-emotion-cache-1p1nwyz {
+    background: rgba(21, 23, 63, 0.9) !important;
+    border-radius: 0 0 8px 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-top: none !important;
+}
+
+/* ===== Data Table Inside Expander ===== */
+.stExpander .stDataFrame .data {
+    background: transparent !important;
+}
+
+/* ===== Table Headers ===== */
+.stExpander .stDataFrame th {
+    background: rgba(34, 38, 123, 0.7) !important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+/* ===== Table Cells ===== */
+.stExpander .stDataFrame td {
+    background: rgba(21, 23, 63, 0.7) !important;
+    color: white !important;
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* ===== Hovered Rows ===== */
+.stExpander .stDataFrame tr:hover {
+    background: rgba(34, 38, 123, 0.5) !important;
+}
+
+/* Selected cells */
+.dvn-scroller .cell.selected {
+    background: rgba(34, 38, 123, 0.7) !important;
+}
+
+/* ===== Textarea Styling ===== */
+textarea[aria-label="Enter your query here"] {
+    background: rgba(34, 38, 123, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+    color: white !important;
+    padding: 12px 16px !important;
+    font-size: 16px !important;
+    font-family: 'Arial', sans-serif !important;
+    min-height: 120px !important;
+    width: 100% !important;
+    transition: all 0.3s ease !important;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Placeholder text */
+textarea[aria-label="Enter your query here"]::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-style: italic !important;
+}
+
+/* Focus state */
+textarea[aria-label="Enter your query here"]:focus {
+    outline: none !important;
+    border-color: #22267b !important;
+    box-shadow: 0 0 0 2px rgba(34, 38, 123, 0.5) !important;
+    background: rgba(34, 38, 123, 0.4) !important;
+}
+
+/* Hover state */
+textarea[aria-label="Enter your query here"]:hover {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    background: rgba(34, 38, 123, 0.35) !important;
+}
+
+/* Disabled state */
+textarea[aria-label="Enter your query here"]:disabled {
+    background: rgba(34, 38, 123, 0.15) !important;
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* ===== Selectbox/Dropdown Styling ===== */
+/* Main container */
+.st-br.st-bs.st-ca.st-cb.st-cc.st-b3.st-cd.st-ce.st-bi.st-cf.st-cg.st-ch.st-ci {
+    background: rgba(34, 38, 123, 0.2) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(5px);
+}
+
+/* Selected value display */
+.st-cj.st-br.st-b6.st-bk.st-ck.st-bi.st-cl.st-cm.st-cn {
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+/* Dropdown input */
+.st-ae.st-af.st-ag.st-bq.st-ai.st-aj.st-c4.st-d1.st-dg.st-ck.st-d3.st-cq.st-cr.st-cs.st-ct.st-ay.st-co.st-cu.st-ar.st-as.st-b6.st-b5.st-cw.st-cx.st-cy.st-cz {
+    color: white !important;
+    background: transparent !important;
+}
+
+/* Dropdown arrow */
+.st-ae.st-af.st-ag.st-bq.st-ai.st-aj.st-d4.st-d5.st-d6.st-d7.st-d8.st-d9.st-da {
+    color: white !important;
+}
+
+/* Dropdown menu */
+[role="listbox"] {
+    background: linear-gradient(135deg, #15173f 0%, #090909 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Dropdown options */
+[role="option"] {
+    color: white !important;
+}
+
+[role="option"]:hover {
+    background: rgba(34, 38, 123, 0.5) !important;
+}
+
+/* ===== Multiselect Tag Styling ===== */
+/* Tag container */
+.st-br.st-bs.st-ca.st-cb.st-cc.st-b3.st-cd.st-di.st-bi.st-cw.st-cx.st-dj.st-cz {
+    background: rgba(34, 38, 123, 0.2) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(5px);
+}
+
+/* Individual tags */
+[data-baseweb="tag"] {
+    background: linear-gradient(90deg, #22267b 0%, #15173f 100%) !important;
+    color: white !important;
+    border-radius: 16px !important;
+    border: none !important;
+    margin: 4px !important;
+}
+
+/* Tag text */
+[data-baseweb="tag"] span[title] {
+    color: white !important;
+}
+
+/* Tag close button */
+[data-baseweb="icon"] {
+    color: white !important;
+    opacity: 0.7;
+    transition: all 0.2s ease !important;
+}
+
+[data-baseweb="icon"]:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Tag input */
+.st-ae.st-af.st-ag.st-ah.st-ai.st-aj.st-c4.st-d1.st-dg.st-ck.st-d3.st-cq.st-cr.st-cs.st-ct.st-ay.st-co.st-cu.st-ar.st-as.st-b6.st-b5.st-cw.st-cx.st-cy.st-cz {
+    color: white !important;
+    background: transparent !important;
+}
