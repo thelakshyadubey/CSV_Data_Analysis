@@ -68,8 +68,8 @@ Key components:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/csv-data-analyzer.git
-cd csv-data-analyzer
+git clone https://github.com/thelakshyadubey/csv_data_analysis.git
+cd csv_data_analysis
 ```
 
 2. Install dependencies:
